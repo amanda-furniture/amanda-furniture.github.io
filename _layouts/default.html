@@ -62,7 +62,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h4 style="background-color:#ffbf00; padding:6px 6px 6px 6px; border-radius:5px;">{{ page.notice }}</h4>
+        {% if page.notice %} {% include notice.html %} {% endif %} 
         <h1>Auctions, Antiques, Collectibles</h1>
         <p>{{ page.description }}</p>
       </div>
