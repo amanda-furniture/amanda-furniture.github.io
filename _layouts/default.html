@@ -62,6 +62,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+        {% if page.notice %} {% include notice.html %} {% endif %} 
         <h1>Auctions, Antiques, Collectibles</h1>
         <p>{{ page.description }}</p>
       </div>
